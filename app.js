@@ -12,7 +12,7 @@ app.get('/', (req,res) => {
 
 app.post("/",(req,res) => {
     const texto = req.body.title || '';
-    res.send('<h1>Hola '+texto+ ' </h1>')
+    res.send('<h1>Hola '+texto+ '!</h1>')
 })
 
 app.listen(3000, () => console.log('Listening on port 3000!'));
